@@ -5,12 +5,14 @@
 };
 
 
-double calculateArea(struct Circle c) {
+double calculateArea(struct Circle c)
+ {
     return 3.14159 * c.radius * c.radius; 
 }
 
 
-double calculatePerimeter(struct Circle c) {
+double calculatePerimeter(struct Circle c) 
+{
     return 2 * 3.14159 * c.radius;
 }
 
@@ -30,7 +32,7 @@ int main() {
 
     
     printf("\nCircle 1:\n");
-    printf("Area: %.2lf\n", calculateArea(circle1));
+    printf("Area%.2lf\n",calculateArea(circle1));
     printf("Perimeter: %.2lf\n", calculatePerimeter(circle1));
 
    
